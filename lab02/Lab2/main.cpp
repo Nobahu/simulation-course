@@ -1,20 +1,15 @@
 #include <iostream>
+#include <chrono>
 #include <iomanip>
 #include <vector>
 
 const double c =  130.0;
 const double rho = 19300.0;
-const double lambda =  317.0;
+const double lambda = 317.0;
 
-int main()
+void run_simulation(double L, double tau, double h, double T0, double Tn, double time)
 {
-  double L = 0.1;
-  double tau = 0.0001;
-  double h = 0.0001;
-
-  double T0 = 20;
-  double Tn = -100;
-  double time = 10;
+  auto start = std::chrono::steady_clock::now();
 
   int N = static_cast<int>(L / h); 
 
@@ -64,9 +59,35 @@ int main()
 
   }
 
+  auto end = std::chrono::steady_clock::now();
+
+  std::chrono::duration<double> sim_time = end - start;
+
+  std::cout << std::fixed << std::setprecision(10);
+  std::cout << "Шаг по времени: " << tau << " Шаг по пространству: " << h << '\n';
+  std::cout << "Время моделирования: " << sim_time.count() << '\n';
   std::cout << "Результаты метода сеток:\n";
   std::cout << "Начальная температура внутри: " << T0 << '\n';
   std::cout << "Начальная температура снаружи: " << Tn << '\n';
   std::cout << std::fixed << std::setprecision(5);
   std::cout << "Температура в пластине спустя " << time << " секунд: " << std::setw(5) << T_prev[N/2] << '\n';
+}
+
+int main()
+{
+  double L = 0.3;
+  double T0 = 22;
+  double Tn = -40;
+  double time = 30;
+
+  double tau_values[] = {0.1, 0.01, 0.001, 0.0001};
+  double h_values[] = {0.1, 0.01, 0.001, 0.0001};
+
+  for(auto& tau: tau_values){
+    for(auto h: h_values) {
+      run_simulation(L, tau, h, T0, Tn, time);
+      std::cout << "===============================================\n";
+    }
+  }
+
 }
