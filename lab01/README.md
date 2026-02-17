@@ -20,21 +20,19 @@
 
 
 
-**\["/lab01/Screen1.png"]**
+**!\["1"](<Screen1.png>)**
 
-**\["/lab01/Screen2.png"]**
+**!\["2"](<Screen2.png>)**
 
-**\["/lab01/Screen3.png"]**
+**!\["3"](<Screen3.png>)**
 
-**\["/lab01/Screen4.png"]**
+**!\["4"](<Screen4.png>)**
 
-**\["/lab01/Screen5.png"]**
-
-
+**!\["5"](<Screen5.png>)**
 
 
 
-**\*\*Вывод\*\***
+**Вывод**
 
 
 
