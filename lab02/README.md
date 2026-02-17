@@ -20,15 +20,15 @@
 
 
 
-**!\["1"](</lab01/Screen1.png>)**
+**!\["1"](<Screen1.png>)**
 
-**!\["2"](</lab01/Screen2.png>)**
+**!\["2"](<Screen2.png>)**
 
-**!\["3"](</lab01/Screen3.png>)**
+**!\["3"](<Screen3.png>)**
 
-**!\["4"](</lab01/Screen4.png>)**
+**!\["4"](<Screen4.png>)**
 
-**!\["5"](</lab01/Screen5.png>)**
+**!\["5"](<Screen5.png>)**
 
 
 
