@@ -48,15 +48,12 @@
             SizeTextBox = new TextBox();
             DtLabel = new Label();
             DtTextBox = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
             // 
             // StartButton
             // 
-            StartButton.Location = new Point(770, 50);
+            StartButton.Location = new Point(1023, 42);
             StartButton.Name = "StartButton";
             StartButton.Size = new Size(75, 23);
             StartButton.TabIndex = 0;
@@ -66,7 +63,7 @@
             // HeightLabel
             // 
             HeightLabel.AutoSize = true;
-            HeightLabel.Location = new Point(36, 31);
+            HeightLabel.Location = new Point(289, 23);
             HeightLabel.Name = "HeightLabel";
             HeightLabel.Size = new Size(129, 15);
             HeightLabel.TabIndex = 1;
@@ -75,7 +72,7 @@
             // AngleLabel
             // 
             AngleLabel.AutoSize = true;
-            AngleLabel.Location = new Point(36, 73);
+            AngleLabel.Location = new Point(289, 65);
             AngleLabel.Name = "AngleLabel";
             AngleLabel.Size = new Size(110, 15);
             AngleLabel.TabIndex = 2;
@@ -84,7 +81,7 @@
             // SpeedLabel
             // 
             SpeedLabel.AutoSize = true;
-            SpeedLabel.Location = new Point(36, 114);
+            SpeedLabel.Location = new Point(289, 106);
             SpeedLabel.Name = "SpeedLabel";
             SpeedLabel.Size = new Size(151, 15);
             SpeedLabel.TabIndex = 3;
@@ -92,21 +89,21 @@
             // 
             // HeightTextBox
             // 
-            HeightTextBox.Location = new Point(189, 28);
+            HeightTextBox.Location = new Point(442, 20);
             HeightTextBox.Name = "HeightTextBox";
             HeightTextBox.Size = new Size(100, 23);
             HeightTextBox.TabIndex = 4;
             // 
             // AngleTextBox
             // 
-            AngleTextBox.Location = new Point(189, 70);
+            AngleTextBox.Location = new Point(442, 62);
             AngleTextBox.Name = "AngleTextBox";
             AngleTextBox.Size = new Size(100, 23);
             AngleTextBox.TabIndex = 5;
             // 
             // SpeedTextBox
             // 
-            SpeedTextBox.Location = new Point(189, 111);
+            SpeedTextBox.Location = new Point(442, 103);
             SpeedTextBox.Name = "SpeedTextBox";
             SpeedTextBox.Size = new Size(100, 23);
             SpeedTextBox.TabIndex = 6;
@@ -117,21 +114,21 @@
             chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chart1.Legends.Add(legend1);
-            chart1.Location = new Point(1, 151);
+            chart1.Location = new Point(121, 135);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chart1.Series.Add(series1);
-            chart1.Size = new Size(1060, 490);
+            chart1.Size = new Size(1060, 428);
             chart1.TabIndex = 7;
             chart1.Text = "chart1";
             // 
             // WeightLabel
             // 
             WeightLabel.AutoSize = true;
-            WeightLabel.Location = new Point(346, 31);
+            WeightLabel.Location = new Point(599, 23);
             WeightLabel.Name = "WeightLabel";
             WeightLabel.Size = new Size(91, 15);
             WeightLabel.TabIndex = 8;
@@ -140,7 +137,7 @@
             // SizeLabel
             // 
             SizeLabel.AutoSize = true;
-            SizeLabel.Location = new Point(346, 73);
+            SizeLabel.Location = new Point(599, 65);
             SizeLabel.Name = "SizeLabel";
             SizeLabel.Size = new Size(141, 15);
             SizeLabel.TabIndex = 9;
@@ -148,14 +145,14 @@
             // 
             // WeightTextBox
             // 
-            WeightTextBox.Location = new Point(521, 28);
+            WeightTextBox.Location = new Point(774, 20);
             WeightTextBox.Name = "WeightTextBox";
             WeightTextBox.Size = new Size(100, 23);
             WeightTextBox.TabIndex = 10;
             // 
             // SizeTextBox
             // 
-            SizeTextBox.Location = new Point(521, 70);
+            SizeTextBox.Location = new Point(774, 62);
             SizeTextBox.Name = "SizeTextBox";
             SizeTextBox.Size = new Size(100, 23);
             SizeTextBox.TabIndex = 11;
@@ -163,7 +160,7 @@
             // DtLabel
             // 
             DtLabel.AutoSize = true;
-            DtLabel.Location = new Point(346, 114);
+            DtLabel.Location = new Point(599, 106);
             DtLabel.Name = "DtLabel";
             DtLabel.Size = new Size(154, 15);
             DtLabel.TabIndex = 12;
@@ -171,43 +168,16 @@
             // 
             // DtTextBox
             // 
-            DtTextBox.Location = new Point(521, 111);
+            DtTextBox.Location = new Point(774, 106);
             DtTextBox.Name = "DtTextBox";
             DtTextBox.Size = new Size(100, 23);
             DtTextBox.TabIndex = 13;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(111, 644);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 15);
-            label1.TabIndex = 17;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(288, 644);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 15);
-            label2.TabIndex = 18;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(500, 644);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 15);
-            label3.TabIndex = 19;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1061, 668);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(1353, 823);
             Controls.Add(DtTextBox);
             Controls.Add(DtLabel);
             Controls.Add(SizeTextBox);
@@ -248,8 +218,5 @@
         private TextBox SizeTextBox;
         private Label DtLabel;
         private TextBox DtTextBox;
-        private Label label1;
-        private Label label2;
-        private Label label3;
     }
 }
