@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Windows.Forms.DataVisualization.Charting;
 using System.Drawing;
+using System.Reflection.Metadata;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Lab1
 {
     public partial class Form1 : Form
     {
+        private DataGridView resultsGrid;
         private void SetupChart()
         {
             // Названия осей
@@ -23,17 +25,21 @@ namespace Lab1
             chart1.ChartAreas[0].AxisY.Interval = 5;
         }
 
+        // Переменные для хранения результатов текущего полета
+        decimal currentAngle;
+        decimal startHeight;
+        decimal startSpeed;
+        decimal maxHeight = 0;
+        decimal finalX = 0;
+        decimal finalVx = 0;
+        decimal finalVy = 0;
+
+        //Переменные для работы с вычислениями и формулами
         const decimal g = 9.81M;
         const decimal c = 0.15M;
         const decimal rho = 1.29M;
         decimal dt = 0;
         decimal t, x, y, v0, cosa, sina, S, m, k, vx, vy;
-
-        // Переменные для хранения результатов текущего полета
-        decimal maxHeight = 0;
-        decimal finalX = 0;
-        decimal finalVx = 0;
-        decimal finalVy = 0;
 
         // Счетчик траекторий для разных цветов
         int trajectoryCount = 0;
@@ -64,11 +70,14 @@ namespace Lab1
                 decimal.TryParse(SizeTextBox.Text, out decimal size) &&
                 decimal.TryParse(DtTextBox.Text, out decimal parsedDt))
             {
+                currentAngle = angle;
+                startHeight = height;
+                startSpeed = speed;
                 dt = parsedDt;
                 if (!timer1.Enabled)
                 {
                     // Новая серия для новой траектории
-                    string seriesName = $"dt = {parsedDt}";
+                    string seriesName = $"dt = {parsedDt} (№{trajectoryCount + 1})";
 
                     Series trajectorySeries = new Series(seriesName);
                     trajectorySeries.ChartType = SeriesChartType.Line;
@@ -107,8 +116,6 @@ namespace Lab1
                 else
                 {
                     timer1.Stop();
-
-
                 }
             }
             else
@@ -157,15 +164,54 @@ namespace Lab1
                 finalVy = vy;
 
                 decimal finalSpeed = (decimal)Math.Sqrt((double)(finalVx * finalVx + finalVy * finalVy));
-                label1.Text = $"Высота: {maxHeight:F2} м";
-                label2.Text = $"Дистанция: {finalX:F2} м";
-                label3.Text = $"Скорость: {finalSpeed:F2} м/с";
+
+                resultsGrid.Rows.Add(
+                    trajectoryCount,
+                    startHeight.ToString("F2"),
+                    startSpeed.ToString("F2"),
+                    currentAngle.ToString("F1"),
+                    m.ToString("F3"),
+                    S.ToString("F4"),
+                    dt.ToString("F4"),
+                    finalX.ToString("F2"),
+                    maxHeight.ToString("F2"),
+                    finalSpeed.ToString("F2")
+                );
+
+                if (resultsGrid.Rows.Count > 0)
+                {
+                    var row = resultsGrid.Rows[resultsGrid.Rows.Count - 1];
+                    row.DefaultCellStyle.BackColor = Color.FromArgb(50, colors[(trajectoryCount - 1) % colors.Length]);
+                }
 
                 return;
             }
 
             chart1.Series[chart1.Series.Count - 1].Points.AddXY(x, y);
         }
+
+        private void SetupResultsGrid()
+        {
+            resultsGrid = new DataGridView();
+            resultsGrid.Location = new Point(0, 570);
+            resultsGrid.Size = new Size(1355, 150);
+            resultsGrid.AllowUserToAddRows = false;
+            resultsGrid.ReadOnly = true;
+            resultsGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            resultsGrid.ColumnCount = 10;
+            resultsGrid.Columns[0].Name = "№";
+            resultsGrid.Columns[1].Name = "h (м)";
+            resultsGrid.Columns[2].Name = "v (м/с)";
+            resultsGrid.Columns[3].Name = "α (градусы)";
+            resultsGrid.Columns[4].Name = "m (кг)";
+            resultsGrid.Columns[5].Name = "S (м²)";
+            resultsGrid.Columns[6].Name = "dt (с)";
+            resultsGrid.Columns[7].Name = "Дальность (м)";
+            resultsGrid.Columns[8].Name = "Макс. высота (м)";
+            resultsGrid.Columns[9].Name = "Скорость в конце (м/с)";
+            this.Controls.Add(resultsGrid);
+        }
+
 
         // Кнопка для очистки всех траекторий
         private void ClearButton_Click(object sender, EventArgs e)
@@ -180,22 +226,21 @@ namespace Lab1
                 chart1.Series[0].Points.Clear();
             }
 
+            resultsGrid.Rows.Clear();
+
             trajectoryCount = 0;
             currentMaxX = 50;
             currentMaxY = 30;
             chart1.ChartAreas[0].AxisX.Maximum = currentMaxX;
             chart1.ChartAreas[0].AxisY.Maximum = currentMaxY;
 
-            // Очищаем лейблы
-            label1.Text = "Высота: --";
-            label2.Text = "Дистанция: --";
-            label3.Text = "Скорость: --";
         }
 
         public Form1()
         {
             InitializeComponent();
             SetupChart();
+            SetupResultsGrid();
 
             timer1.Interval = 1;
             timer1.Tick += timer1_Tick;
@@ -203,10 +248,11 @@ namespace Lab1
 
             Button clearButton = new Button();
             clearButton.Text = "Очистить все";
-            clearButton.Location = new System.Drawing.Point(770, 110);
+            clearButton.Location = new System.Drawing.Point(1150, 40);
             clearButton.Size = new System.Drawing.Size(100, 30);
             clearButton.Click += ClearButton_Click;
             this.Controls.Add(clearButton);
         }
+
     }
 }
