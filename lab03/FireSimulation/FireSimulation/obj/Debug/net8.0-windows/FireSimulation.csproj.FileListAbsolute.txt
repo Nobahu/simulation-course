@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.Form1.resources
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.csproj.GenerateResource.cache
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.AssemblyInfo.cs
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.sourcelink.json
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\bin\Debug\net8.0-windows\FireSimulation.exe
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\bin\Debug\net8.0-windows\FireSimulation.deps.json
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\bin\Debug\net8.0-windows\FireSimulation.runtimeconfig.json
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\bin\Debug\net8.0-windows\FireSimulation.dll
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\bin\Debug\net8.0-windows\FireSimulation.pdb
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.dll
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\refint\FireSimulation.dll
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.pdb
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\FireSimulation.genruntimeconfig.cache
+C:\Users\user\Desktop\repos\FireSimulation\FireSimulation\obj\Debug\net8.0-windows\ref\FireSimulation.dll
