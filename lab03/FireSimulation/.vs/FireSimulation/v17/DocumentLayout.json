@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|c:\\users\\user\\desktop\\repos\\firesimulation\\firesimulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|solutionrelative:firesimulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|c:\\users\\user\\desktop\\repos\\firesimulation\\firesimulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|solutionrelative:firesimulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|c:\\users\\user\\desktop\\repos\\firesimulation\\firesimulation\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|solutionrelative:firesimulation\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|C:\\Users\\user\\Desktop\\repos\\FireSimulation\\firesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F1703FD0-466A-47CC-BC4B-C16BE38A055B}|FireSimulation\\FireSimulation.csproj|solutionrelative:firesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Program.cs",
+              "RelativeDocumentMoniker": "FireSimulation\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Program.cs",
+              "RelativeToolTip": "FireSimulation\\Program.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowCAAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T15:29:32.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rules.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Rules.cs",
+              "RelativeDocumentMoniker": "FireSimulation\\Rules.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Rules.cs",
+              "RelativeToolTip": "FireSimulation\\Rules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T15:27:42.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Simulation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Simulation.cs",
+              "RelativeDocumentMoniker": "FireSimulation\\Simulation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Simulation.cs",
+              "RelativeToolTip": "FireSimulation\\Simulation.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T15:28:54.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Form1.cs",
+              "RelativeDocumentMoniker": "FireSimulation\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\repos\\FireSimulation\\FireSimulation\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "FireSimulation\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T15:27:14.825Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
