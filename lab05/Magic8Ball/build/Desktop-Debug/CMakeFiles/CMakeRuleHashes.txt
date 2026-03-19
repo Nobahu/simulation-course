@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+1cbef35bc1693ab8c4e8f7b9431b4fe8 CMakeFiles/Magic8Ball_autogen
+1cbef35bc1693ab8c4e8f7b9431b4fe8 CMakeFiles/Magic8Ball_autogen_timestamp_deps
+2bf080df4f4991bdbaec56a2ba4b4012 Magic8Ball_autogen/timestamp

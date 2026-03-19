@@ -1,0 +1,9 @@
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/Magic8Ball.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/install.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/Magic8Ball_autogen_timestamp_deps.dir
+/home/nobahu/Magic8Ball/build/Desktop-Debug/CMakeFiles/Magic8Ball_autogen.dir
